@@ -1,0 +1,46 @@
+Arguments: 
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /data/data/com.termux/files/usr/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.7.0
+
+Platform: 
+  android arm64
+
+Trace: 
+  Error: EACCES: permission denied, symlink '../../../parser/bin/babel-parser.js' -> '/storage/emulated/0/Xi/reactnative/BibleStudy/node_modules/@babel/core/node_modules/.bin/parser'
+
+npm manifest: 
+  {
+    "name": "biblestudy",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web"
+    },
+    "dependencies": {
+      "expo": "~48.0.6",
+      "expo-status-bar": "~1.4.4",
+      "react": "18.2.0",
+      "react-native": "0.71.3"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.20.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
