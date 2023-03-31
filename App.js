@@ -1,20 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+//import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView, StyleSheet, Platform, StatusBar } from 'react-native';
+import AppContainer from './AppContainer';
+
+import { ScoreProvider } from './src/contexts/data.context';
+import { PageProvider } from './src/contexts/page.context';
 
 export default function App() {
+  
   return (
-    <View style={styles.container}>
-      <Text>Blah sheep</Text>
-      <StatusBar style="auto" />
-    </View>
+  	  <PageProvider>
+  	  	<ScoreProvider>
+				<SafeAreaView style={styles.container}>
+					<AppContainer />
+					<StatusBar style="auto" />
+				</SafeAreaView>
+			</ScoreProvider>
+		</PageProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    padding: 0,
+    margin: 0,
     alignItems: 'center',
-    justifyContent: 'center',
   },
 });

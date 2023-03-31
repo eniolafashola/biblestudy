@@ -1,5 +1,5 @@
 Arguments: 
-  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js add @react-navigation/native
 
 PATH: 
   /data/data/com.termux/files/usr/bin
@@ -8,7 +8,7 @@ Yarn version:
   1.22.19
 
 Node version: 
-  18.7.0
+  19.6.1
 
 Platform: 
   android arm64
@@ -31,7 +31,8 @@ npm manifest:
       "expo": "~48.0.6",
       "expo-status-bar": "~1.4.4",
       "react": "18.2.0",
-      "react-native": "0.71.3"
+      "react-native": "0.71.4",
+      "react-native-paper": "4.9.2"
     },
     "devDependencies": {
       "@babel/core": "^7.20.0"
